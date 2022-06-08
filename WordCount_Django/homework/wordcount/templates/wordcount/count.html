@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>멋쟁이사자처럼7기 이찬우(한국산업기술대)</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="static/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<style>
+body{
+    font-family: 'Jua', sans-serif;
+}
+h1{
+    color:darkslategrey;
+}
+
+</style>
+
+</head>
+
+   <!--  Scripts-->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="static/materialize/js/materialize.js"></script>
+   <script src="static/materialize/js/init.js"></script>
+ 
+<body bgcolor="#A7EEFF">
+    <center>
+    <h1><a href="{% url 'home' %}" id="download-button" class="btn-large waves-effect waves-light orange">다시하기</a></h1>
+        <br>
+<h1>[ 당신이 입력한 텍스트는 <!--총단어수--> {{ total }} 단어로 구성되어 있습니다. ]</h1>
+<br>
+<h1>[ 입력한 텍스트] : </h1>
+<!-- 입력받은 전체 텍스트 -->
+<h3>{{ fulltext }}</h3>
+
+<h1>[ 단어 카운트 ] :</h1>
+<!-- '단어' - '단어나온 횟수' -->
+<h3>{% for word, countTotal in dictionary %}</h3>
+<h3>{{word}} -> {{countTotal}}</h3>
+<br>
+{% endfor %}
+</center>
+</body>
+</html>
