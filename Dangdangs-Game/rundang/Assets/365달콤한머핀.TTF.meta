@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a5e27bbd26faa1540a28dc9f5d546132
+timeCreated: 1565134653
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 365sweetmuffin
+  fontNames:
+  - 365sweetmuffin
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
